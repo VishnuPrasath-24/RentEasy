@@ -1,0 +1,100 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Royal Enfield Classic 350",
+      "category": "Bike",
+      "location": "Coimbatore",
+      "price": 900,
+      "image": "./images/Royal Enfield Classic 350.webp"
+    },
+    {
+      "id": "2",
+      "name": "Honda Activa 6G",
+      "category": "Bike",
+      "location": "Chennai",
+      "price": 500,
+      "image": "./images/Honda Activa 6G.avif"
+    },
+    {
+      "id": "3",
+      "name": "Maruti Suzuki Swift",
+      "category": "Car",
+      "location": "Coimbatore",
+      "price": 1800,
+      "image": "./images/Maruti Suzuki Swift.avif"
+    },
+    {
+      "id": "4",
+      "name": "Hyundai Creta",
+      "category": "Car",
+      "location": "Chennai",
+      "price": 2500,
+      "image": "./images/Hyundai Creta.png"
+    },
+    {
+      "id": "5",
+      "name": "Mountain Cycle",
+      "category": "Cycle",
+      "location": "Coimbatore",
+      "price": 300,
+      "image": "./images/Mountain Cycle.webp"
+    },
+    {
+      "id": "6",
+      "name": "Canon EOS 1500D",
+      "category": "Camera",
+      "location": "Bangalore",
+      "price": 1200,
+      "image": "./images/Canon EOS 1500D.webp"
+    },
+    {
+      "id": "7",
+      "name": "Sony Alpha Camera",
+      "category": "Camera",
+      "location": "Chennai",
+      "price": 1500,
+      "image": "./images/Sony Alpha Camera.webp"
+    },
+    {
+      "id": "8",
+      "name": "Trek Mountain Cycle",
+      "category": "Cycle",
+      "location": "Bangalore",
+      "price": 450,
+      "image": "./images/Trek Mountain Bike.webp"
+    }
+  ],
+  "bookings": [
+    {
+      "product": "Honda Activa 6G",
+      "name": "harish",
+      "phone": "8976543210",
+      "fromDate": "2026-10-11",
+      "toDate": "2026-10-12",
+      "days": "2",
+      "price": 500,
+      "totalAmount": 1000,
+      "id": "tOrfO51wqZ0"
+    },
+    {
+      "product": "Honda Activa 6G",
+      "name": "kiruma",
+      "phone": "7894563212",
+      "fromDate": "2026-10-11",
+      "toDate": "2026-10-11",
+      "days": "1",
+      "price": 500,
+      "totalAmount": 500,
+      "id": "dwhNfQopHFg"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "yogesh",
+      "password": "yog@123"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

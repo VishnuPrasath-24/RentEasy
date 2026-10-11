@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentEasy</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+           <h3>Rent<span>Easy</span></h3>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#products">Rentals</a></li>
+            <li><a href="#features">Why RentEasy</a></li>
+            <li><a href="./booking/booking.html">My Bookings</a></li>
+        </ul>
+    </div>
+
+    <div class="content1">
+        <div class="content">
+            <h1>Rent anything<span>you need in one place</span></h1>
+            <p>Rent bikes, cars, cycles, cameras and more. Find the perfect rental item quickly and easily.</p>
+            <div class="search-box">
+                <select id="propertyType">
+                    <option value="all">All Rentals</option>
+                    <option value="Cycle">Cycle</option>
+                    <option value="Bike">Bike</option>
+                    <option value="Car">Car</option>
+                    <option value="Camera">Camera</option>
+                </select>
+
+                <button onclick="searchProperties()">Explore Rentals</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="catalog" id="products">
+        <div class="heading">
+            <h2>Available Rentals</h2>
+            <p>Search by category, name or location.</p>
+        </div>
+
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Search rental products..." />
+        </div>
+
+        <div class="products" id="productGrid"> </div>
+    </div>
+
+
+    <div class="features" id="features">
+        <div class="title">
+            <h2>How It Works</h2>
+            <p>Find your item and rent it easily.</p>
+        </div>
+
+        <div class="feature-grid">
+            <div class="feature">
+                <div class="feature-icon"> 🔍 </div>
+                <h3>Easy Search</h3>
+                <p>Search bikes, cars, cameras and cycles.</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon"> 💙 </div>
+                <h3>Save Favorites</h3>
+                <p>Save your favorite rental items.</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon"> 🛡️ </div>
+                <h3>Easy Booking</h3>
+                <p>Select an item and contact the owner.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <p>© 2026 RentEasy. All Rights Reserved.</p>
+    </div>
+
+
+    <div id="bookingBox" class="booking-box">
+        <h2>Book Rental</h2>
+        <p id="bookingProduct"> </p>
+
+        <input type="text" id="customerName" placeholder="Enter your name">
+        <input type="text" id="customerPhone" placeholder="Enter phone number">
+        <label>From Date</label><input type="date" id="fromDate" onchange="calculateAmount()">
+        <label>To Date</label><input type="date" id="toDate" onchange="calculateAmount()">
+
+        <div class="booking-summary">
+            <p>Price per day:<strong id="dailyPrice">₹0</strong></p>
+            <p>Number of days:<strong id="totalDays">0</strong></p>
+            <h3>Total Amount:<span id="totalAmount">₹0</span></h3>
+        </div>
+        <button onclick="confirmBooking()">Confirm Booking</button>
+        <button onclick="closeBooking()">Cancel</button>
+    </div>
+
+    <div id="successMessage" style="display: none;">
+        <h2>Booking Successful!</h2>
+        <p>Your rental booking has been confirmed.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

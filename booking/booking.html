@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentEasy - My Bookings</title>
+    <link rel="stylesheet" href="./booking.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+            <h3>Rent<span>Easy</span></h3>
+        </div>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#products">Rentals</a></li>
+            <li><a href="./booking.html">My Bookings</a></li>
+        </ul>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <div class="bookings">
+        <div class="heading">
+            <h1>My Bookings</h1>
+            <p>View all your rental bookings</p>
+        </div>
+
+        <div id="bookingList" class="booking-list"> </div>
+
+        <div id="noBookings" class="nobookings">
+            <h2>No Bookings Yet</h2>
+            <p>You have not booked any rental items</p>
+            <a href="../index.html">Explore Rentals</a>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>© 2026 RentEasy. All Rights Reserved.</p>
+    </div>
+    <script src="booking.js"></script>
+</body>
+
+</html>
